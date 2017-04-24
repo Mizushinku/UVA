@@ -30,12 +30,8 @@ int main(void)
 			node[v].push_back(u);
 		}
 		printf("%d\n\n", case_num++);
-		for(int i = 1; i <= n; ++i) {
-			if(dfn[i] == 0) {
-				dfsc = 1;
-				dfs(dfsc,-1);
-			}
-		}
+		dfsc = 1;
+		dfs(dfsc,-1);
 		printf("#\n");
 	}
 	return 0;
